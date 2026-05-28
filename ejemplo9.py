@@ -14,11 +14,9 @@ class Animal:
 class Mascota(Perro, Animal):
     def __init__(self, nombre, sonido, raza):
 
-        # Inicializar clase Estudiante
         Perro.__init__(self, nombre, sonido)
-
-        # Inicializar clase Trabajador
         Animal.__init__(self, raza)
+        
     def rutinas(self):
         self.realiza()
         self.pertenecer()
